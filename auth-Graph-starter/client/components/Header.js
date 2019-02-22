@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {graphql} from 'react-apollo';
+import { graphql } from 'react-apollo';
 import { Link } from 'react-router';
 import query from '../queries/CurrentUser';
 import mutation from '../mutations/Logout';
@@ -13,7 +13,7 @@ class Header extends Component {
     }
 
     renderButtons(){
-      const {loading, user} = this.props.data;
+      const { loading, user } = this.props.data;
 
       if(loading) { return <div /> }
 
